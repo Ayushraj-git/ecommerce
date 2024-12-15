@@ -15,7 +15,7 @@ const CartPage = ({ cart, handleQuantityChange, removeFromCart }) => {
               <img src={item.image} alt={item.name} className="cart-item-image" />
               <div className="cart-item-details">
                 <h3>{item.name}</h3>
-                <p>${item.price}</p>
+                <p>₹{item.price}</p>
                 <div className="quantity-controls">
                   <button 
                     onClick={() => handleQuantityChange(item.id, -1)} 
@@ -42,7 +42,7 @@ const CartPage = ({ cart, handleQuantityChange, removeFromCart }) => {
       </div>
       {cart.length > 0 && (
         <div className="total-price">
-          <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
+          <h3>Total Price: ₹{totalPrice.toFixed(2)}</h3>
         </div>
       )}
       {cart.length > 0 && (
