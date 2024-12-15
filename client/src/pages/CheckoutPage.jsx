@@ -72,7 +72,7 @@ const CheckoutPage = ({ cart, removeFromCart }) => {
             />
             <div className="checkout-item-details">
               <h3 className="checkout-item-name">{item.name}</h3>
-              <p className="checkout-item-price">${item.price}</p>
+              <p className="checkout-item-price">₹{item.price}</p>
               <span className="checkout-item-quantity">Quantity: {item.quantity}</span>
             </div>
             <button
@@ -85,7 +85,7 @@ const CheckoutPage = ({ cart, removeFromCart }) => {
         ))}
       </div>
       <div className="total-price">
-        <h3>Total Price: ${totalPrice.toFixed(2)}</h3>
+        <h3>Total Price: ₹{totalPrice.toFixed(2)}</h3>
       </div>
     </div>
   );
