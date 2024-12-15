@@ -17,7 +17,7 @@ const ProductDetails = ({ products, addToCart }) => {
       <div className="product-details-info">
         <h2>{product.name}</h2>
         <p>{product.description}</p>
-        <p className="product-details-price">${product.price}</p>
+        <p className="product-details-price">₹{product.price}</p>
         <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
           Add to Cart
         </button>
