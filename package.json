@@ -5,8 +5,8 @@
   "scripts": {
     "start": "vercel dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "type": "module",
+  "dependencies": {
+    "final-ecomm": "file:"
+  }
 }

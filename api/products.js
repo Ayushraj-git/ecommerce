@@ -163,7 +163,6 @@ const products = [
   ];
   
   
-  module.exports = (req, res) => {
-    res.status(200).json(products); // Return all products as JSON
-  };
-  
+  export default function handler(req, res) {
+    res.status(200).json(products);
+  }
